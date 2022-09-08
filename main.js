@@ -16,6 +16,12 @@ function btnClicked() {
   let sciPercent = +document.getElementById('sci-percent').value;
 
   // Calculate & Output Letter Grades
+  document.getElementById('eng-letter').innerHTML = calcGrade();
+  document.getElementById('soc-letter').innerHTML = calcGrade();
+  document.getElementById('math-letter').innerHTML = calcGrade();
+  document.getElementById('sci-letter').innerHTML = calcGrade();
+
+
   // English
   let engLetter;
   if (engPercent >= 80) {
